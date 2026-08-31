@@ -111,10 +111,10 @@ const SUPABASE_URL = "https://nouhsuxbglhxbsaapmaq.supabase.co";       // مثا
 const SUPABASE_ANON_KEY = "sb_publishable_N4gMpwN30jxfJODCZfvc0A_Wsvk34Md"; // Settings → API → anon public key
 /* ===================================================================== */
 
-const SUPABASE_CONFIGURED = SUPABASE_URL.indexOf("YOUR_SUPABASE_URL") === -1 && SUPABASE_ANON_KEY.indexOf("YOUR_SUPABASE_ANON_KEY") === -1;
+const SUPABASE_CONFIGURED = SUPABASE_URL.indexOf("https://nouhsuxbglhxbsaapmaq.supabase.co") === -1 && SUPABASE_ANON_KEY.indexOf("sb_publishable_N4gMpwN30jxfJODCZfvc0A_Wsvk34Md") === -1;
 let sb = null;
 if(SUPABASE_CONFIGURED && window.supabase){
-  sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  sb = window.supabase.createClienthttps: ("https://nouhsuxbglhxbsaapmaq.supabase.co,sb_publishable_N4gMpwN30jxfJODCZfvc0A_Wsvk34Md");
 }
 let REALTIME_CONNECTED = false;
 
